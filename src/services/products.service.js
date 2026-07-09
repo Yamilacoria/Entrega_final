@@ -1,4 +1,4 @@
-// Importaciones
+
 import * as productsModel from "../models/products.model.js";
 
 // Devuelve todos los productos

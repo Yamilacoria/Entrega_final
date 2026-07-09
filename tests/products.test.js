@@ -8,7 +8,7 @@ dotenv.config();
 let token;
 let createdProductId;
 
-// Antes de todos los tests, hacemos login para obtener el token
+// Antes de realizar el test, hacemos login para obtener el token
 beforeAll(async () => {
   const res = await request(app)
     .post("/auth/login")
@@ -16,6 +16,7 @@ beforeAll(async () => {
   token = res.body.token;
 });
 
+//cuando tenemos el token, comenzamos a realizar el test
 // Tests de autenticación
 describe("POST /auth/login", () => {
   test("devuelve token con credenciales válidas", async () => {

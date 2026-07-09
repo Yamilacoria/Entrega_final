@@ -1,6 +1,5 @@
 
-
-// en un proyecto real vendrían de la base de datos
+// seleccionados. En un proyecto real vendrían de la base de datos
 const VALID_USER = {
   email: "admin@techlab.com",
   password: "admin123",

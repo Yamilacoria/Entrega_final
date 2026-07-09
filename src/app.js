@@ -1,4 +1,4 @@
-// Importaciones
+
 import express from "express";
 import cors from "cors";
 import productsRouter from "./routes/products.routes.js";
@@ -16,7 +16,7 @@ app.use("/auth", authRouter);
 
 // Ruta raíz
 app.get("/", (req, res) => {
-  res.send("<h1>TechLab API</h1><p>Servidor funcionando correctamente</p>");
+  res.send("<h1>Proyecto API Node.js</h1><p>El servidor funciona correctamente</p>");
 });
 
 // Health check

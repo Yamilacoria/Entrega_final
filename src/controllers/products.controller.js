@@ -1,7 +1,6 @@
-// Importaciones
+
 import * as productsService from "../services/products.service.js";
 
-// Devuelve todos los productos, o filtrados por categoría si se especifica
 const getAll = async (req, res) => {
   try {
     const { category } = req.query;
@@ -18,7 +17,7 @@ const getAll = async (req, res) => {
   }
 };
 
-// Devuelve un producto por ID
+
 const getById = async (req, res) => {
   try {
     const { id } = req.params;
@@ -32,7 +31,7 @@ const getById = async (req, res) => {
   }
 };
 
-// Crea un nuevo producto
+
 const create = async (req, res) => {
   try {
     const { title, description, category, price, stock } = req.body;
@@ -66,7 +65,7 @@ const create = async (req, res) => {
   }
 };
 
-// Actualiza un producto por ID
+
 const update = async (req, res) => {
   try {
     const { id } = req.params;
@@ -109,7 +108,7 @@ const update = async (req, res) => {
   }
 };
 
-// Elimina un producto por ID
+
 const remove = async (req, res) => {
   try {
     const { id } = req.params;

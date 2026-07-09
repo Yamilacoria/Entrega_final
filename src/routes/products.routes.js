@@ -1,4 +1,4 @@
-// Importaciones
+
 import { Router } from "express";
 import * as productsController from "../controllers/products.controller.js";
 import { authMiddleware } from "../middlewares/auth.middleware.js";
